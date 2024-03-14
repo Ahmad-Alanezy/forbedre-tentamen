@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktside</title>
+    <link rel="stylesheet" href="css/hovedside.css"> <!-- Legg til din CSS-fil -->
+    
+</head>
+<body>
+
+    <nav>
+        <a href=""  class="logo">
+            <img src="img/logo_4.png" alt="Logoen din">
+        </a>
+        <ul>
+            <li><a href="hovedside.html">Hjem</a></li>
+            <li><a href="Om-oss.html">Om oss</a></li>
+            <li><a href="tjenester.html">Tjenester</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="login.html">Log inn</a></li>
+            <li><a href="index.html">Registrer</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <div class="container">
+        <div class="product">
+            <img src="img/xbox series x krontroller stand.jpg" alt="Product Image">
+            <h2>Xbox series X/krontroller stand</h2>
+            <p>Enkelt og ryddig for xbox krontroller.</p>
+            <p>Pris: 650kr</p>
+            <button class="kjopKnapp">Kjøp nå</button>
+        </div>
+
+        <div class="product">
+            <img src="img/JBL Tune.jpg" alt="Product Image">
+            <h2>JBL Tune/Blue</h2>
+            <p>Behaglig øreproppler med Noise chancelling og 40 timer batteri.</p>
+            <p>Pris: 900kr</p>
+            <button class="kjopKnapp">Kjøp nå</button>
+        </div>
+
+        <div class="product">
+            <img src="img/lego star wars.jpg" alt="Product Image">
+            <h2>Lego Star Wars/Special pack</h2>
+            <p>Stort og morsomt å bygge et stort skip.</p>
+            <p>Pris: 1600kr</p>
+            <button class="kjopKnapp">Kjøp nå</button>
+        </div>
+
+        <div class="product">
+            <img src="img/Adidas sko.jpg" alt="Product Image">
+            <h2>Adidas fotballsko/Limited Edition</h2>
+            <p>Kjempe kult fotballsko med Hvit, sort og rosa farger.</p>
+            <p>Pris: 3600kr</p>
+            <button class="kjopKnapp">Kjøp nå</button>
+        </div>
+
+        <div class="product">
+            <img src="img/Sjakk.jpg" alt="Product Image">
+            <h2>Sjakk/Vanlig</h2>
+            <p>Klassisk brettspill og moro.</p>
+            <p>Pris: 200kr</p>
+            <button class="kjopKnapp">Kjøp nå</button>
+        </div>
+
+        <div class="product">
+            <img src="img/luer.jpg" alt="Product Image">
+            <h2>Luer/Mørke Grå</h2>
+            <p>Lett og behaglig lue.</p>
+            <p>Pris: 150kr</p>
+            <button class="kjopKnapp">Kjøp nå</button>
+        </div>
+
+        <div class="product">
+            <img src="img/Jabbar-image.png" alt="Product Image">
+            <h2>Jabbar/LIMITED SPECIAL EDITION</h2>
+            <p>Han er en fin fyr. Damene kommer til å elske ham.</p>
+            <p>Pris: 0.000001kr</p>
+            <button class="kjopKnapp">Kjøp nå</button>
+        </div>
+
+        <div class="product">
+            <img src="img/rizzler.png" alt="Product Image">
+            <h2>Abdullahi/LIMITED RIZZLER EDITION</h2>
+            <p>Giga chad med uendelig rizzler</p>
+            <p>Pris: 1 000 000</p>
+            <button class="kjopKnapp">Kjøp nå</button>
+        </div>
+
+        <div class="product">
+            <img src="img/Daud.png" alt="Product Image">
+            <h2>Daud/ZERO RIZZLER EDITION</h2>
+            <p>Han kan alt, han vet alt og han er smart.</p>
+            <p>Pris: free</p>
+            <button class="kjopKnapp">Kjøp nå</button>
+        </div>
+
+        <div class="product">
+            <img src="img/Is.png" alt="Product Image">
+            <h2>Nogger Black/SPECIAL BLACK EDITION</h2>
+            <p>Kjempe godt is og den beste isen som finnes.</p>
+            <p>Pris: 30kr</p>
+            <button class="kjopKnapp">Kjøp nå</button>
+        </div>
+
+
+    </div>
+    
+    <script src="javascript/hovedside.js"></script>
+    <script>
+        // Funksjon som viser meldingen når brukeren kjøper produktet
+        function visKjopMelding() {
+            alert('Du har kjøpt produktet!');
+        }
+
+        // Hent knappene og legg til en hendelselytter for hver
+        var kjopKnapper = document.querySelectorAll('.kjopKnapp');
+        kjopKnapper.forEach(function(knapp) {
+            knapp.addEventListener('click', visKjopMelding);
+        });
+    </script>
+</body>
+</html>

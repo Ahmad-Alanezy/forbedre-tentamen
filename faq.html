@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktside</title>
+    <link rel="stylesheet" href="css/hovedside.css"> <!-- Legg til din CSS-fil -->
+    
+</head>
+<body>
+
+    <nav>
+        <a href=""  class="logo">
+            <img src="img/logo_4.png" alt="Logoen din">
+        </a>
+        <ul>
+            <li><a href="hovedside.html">Hjem</a></li>
+            <li><a href="Om-oss.html">Om oss</a></li>
+            <li><a href="tjenester.html">Tjenester</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="login.html">Log inn</a></li>
+            <li><a href="index.html">Registrer</a></li>
+        </ul>
+    </nav>
+
+<div class="faq">
+    <h2>Ofte Stilte Spørsmål (FAQ)</h2>
+    <div class="question">
+        <h3>Hvordan kan jeg kontakte kundeservice?</h3>
+        <p>Du kan kontakte vår kundeservice nedeste på siden og skriv navnet ditt og email din. Du kan skrive om hva du trenger hjelp med eller lurer på om noe.</p>
+    </div>
+    <div class="question">
+        <h3>Hvordan kan jeg returnere et produkt?</h3>
+        <p>Du kan returnere et produkt innen 30 dager etter kjøpsdatoen. Vennligst kontakt vår kundeservice for mer informasjon om returprosessen.</p>
+    </div>
+    <div class="question">
+        <h3>Hvilke betalingsmetoder aksepterer dere?</h3>
+        <p>Vi aksepterer Visa, Mastercard, PayPal og bankoverføring som betalingsmetoder.</p>
+    </div>
+    <!-- Legg til flere spørsmål og svar etter behov -->
+</div>
+
+<div class="contact-form">
+    <h2>Kontakt Oss</h2>
+    <form id="contactForm">
+        <label for="name">Navn:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Melding:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="button" onclick="sendEmail()">Send Melding</button>
+    </form>
+</div>
+
+<script src="javascript/hovedside.js"></script>
+<script>
+    // Funksjon som viser meldingen når brukeren kjøper produktet
+    function visKjopMelding() {
+        alert('Du har kjøpt produktet!');
+    }
+
+    // Hent knappene og legg til en hendelselytter for hver
+    var kjopKnapper = document.querySelectorAll('.kjopKnapp');
+    kjopKnapper.forEach(function(knapp) {
+        knapp.addEventListener('click', visKjopMelding);
+    });
+</script>
+</body>
+</html>

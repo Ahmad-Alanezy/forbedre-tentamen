@@ -1,0 +1,190 @@
+nav .logo img {
+    width: 100px; /* Tilpass størrelsen på bildet etter dine preferanser */
+    height: auto; /* Behold proporsjonene på bildet */
+}
+
+
+/* Stil for navigasjonsfelt */
+nav {
+    background-color:#007bff; /* Bakgrunnsfarge for navigasjonsfeltet */
+    padding: 10px 20px; /* Padding for innholdet i navigasjonsfeltet */
+    color: #fff; /* Farge på teksten i navigasjonsfeltet */
+    display: flex; /* Bruk flexbox for layout */
+    justify-content: space-between; /* Plasserer elementer jevnt fordelt langs hovedaksen */
+    align-items: center; /* Plasserer elementene sentrert langs tverraksen */
+}
+
+/* Stil for logo */
+nav .logo {
+    font-size: 24px; /* Størrelse på teksten for logoen */
+    font-weight: bold; /* Fet skrift for logoen */
+    text-decoration: none; /* Fjerner understrekning på lenken */
+    color: #fff; /* Farge på logoen */
+}
+
+/* Stil for navigasjonslenker */
+nav ul {
+    list-style: none; /* Fjerner punktmarkører fra lenkelisten */
+    margin: 0; /* Nullstill margen for å fjerne uønsket plassering */
+    padding: 0; /* Nullstill padding for å fjerne uønsket plassering */
+    display: flex; /* Bruk flexbox for layout */
+}
+
+nav ul li {
+    margin-right: 20px; /* Høyremargen mellom lenkene */
+}
+
+nav ul li a {
+    text-decoration: none; /* Fjerner understrekning på lenken */
+    color: #fff; /* Farge på lenkene */
+    font-weight: bold; /* Fet skrift for lenkene */
+}
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.product p {
+    font-size: 14px;
+    color: #666;
+}
+
+.product button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Stil for FAQ-seksjonen */
+.faq {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.faq h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.faq .question {
+    margin-bottom: 15px;
+}
+
+.faq .question h3 {
+    color: #007bff;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.faq .question p {
+    color: #555;
+}
+
+/* Stil for kontaktskjema */
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-form h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
